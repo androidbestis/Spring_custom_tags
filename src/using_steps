@@ -1,0 +1,8 @@
+1. 创建一个pojo实体类
+2. 创建一个BeanDefinitionParser的解析类,继承[AbstractSingleBeanDefinitionParser],并重写getBeanClass()和doParse()两个方法
+3. 创建一个NameSpaceHandler类,继承[NamespaceHandlerSupport],并重写init()方法
+4. 在项目的classpath路径下建立[META-INF]文件夹
+5. 在META-INF目录下建立一个[XXX.xsd]文件,定义schema
+6. 在META-INF目录下建立一个spring.handlers文件
+7. 在META-INF目录下建立一个spring.schemas文件
+8. 最后和使用default默认标签一样,使用xml配置来使用自定义标签
